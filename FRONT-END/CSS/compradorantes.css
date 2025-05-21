@@ -16,33 +16,25 @@ body {
 }
 
 /* principais duvidas */
+
 .accordion-button {
   display: flex; /* Define um layout flexível */
   justify-content: space-between; /* Espaça o texto e o ícone */
   align-items: center; /* Alinha verticalmente ao centro */
-  padding: 1rem;
+}
+
+.accordion-button::after {
+  font-size: 1.2rem;
+  margin-left: auto; /* Garante que o ícone fique no extremo direito */
 }
 
 .accordion-container {
   display: grid;
-  grid-template-columns: auto 800px; /* largura fixa para o accordion */
+  grid-template-columns: auto 50rem;
   gap: 3.125rem;
   font-family: "Lexend Deca";
   margin-left: 9.375rem;
   margin-right: 9.375rem;
-}
-
-.accordion-body {
-    font-size: 14px;
-    text-align: justify;
-}
-
-.accordion-item + .accordion-item {
-  margin-top: 0;
-}
-
-.accordion-item{
-  margin: 0;
 }
 
 .principais {
@@ -52,13 +44,6 @@ body {
   margin-top: 6.25rem;
   color: #61350C;
 }
-
-.accordion {
-  width: 100%;
-}
-
-/* principais duvidas */
-
 
 .navbar-nav {
   flex-grow: 1; /* Faz com que a lista de navegação ocupe o máximo de espaço disponível */
@@ -81,6 +66,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 70px;
 }
 
 .container2{
@@ -326,6 +312,15 @@ p#sub{
 @media (max-width: 768px) {
   footer {
     padding: 20px 30px;
+  }
+
+  .accordion-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0px 40px 40px;
+    gap: 2px;
   }
 
   .footer-container {
