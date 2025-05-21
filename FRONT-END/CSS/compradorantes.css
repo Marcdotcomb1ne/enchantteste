@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+#imagem1{
+    width: 1920px;
+    height: 767px;
+    display: block;
+}
+
+#retangulo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1920px;
+  height: 149px;
+  background-color: #69502C;
+}
+
+#doeagora { 
+  background-color: rgba(226, 204, 174, 1); 
+  border-color: rgba(226, 204, 174, 1); 
+  color: #4E3629; 
+  font-weight: 700; 
+  font-family: "Lexend Deca"; 
+} 
+#doeagora { 
+  font-size: 16px; 
+  width: 9rem; 
+  margin-right: 2rem; 
+}
+
+#cadastre { 
+  background-color: rgba(226, 204, 174, 1); 
+  border-color: rgba(226, 204, 174, 1); 
+  color: #4E3629; 
+  font-weight: 700; 
+  font-family: "Lexend Deca"; 
+  position: absolute;
+  left: 865px;
+  top: 890px;
+
+} 
+
+p{
+  width: 960px;
+  height: 119px;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 20px;
+}
+
+#doeagora:hover, .btn-junte:hover, #cadastre:hover { 
+  background-color: #caae8d; 
+  color: #3d2106; 
+  border:1px solid #d8b48bce; 
+}
+
+/* Barra de navegação */
+#fixado {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+}
