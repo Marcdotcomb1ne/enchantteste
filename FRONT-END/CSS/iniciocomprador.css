@@ -23,7 +23,6 @@ body {
 }
 
 #imagem3{
-  margin-left: 77px;
   width: 960; 
   height: 477px;
 }
@@ -41,16 +40,17 @@ body {
 
 /* Seção de imagem inicial */
 .info-box {
-  height: auto;
   position: absolute;
-  background-color: #f9efe4;
-  text-align: justify;
+  top: 50%; 
+  right: 5%;
+  transform: translateY(-50%); 
+  max-width: 90vw; 
+  width: 350px; 
   padding: 20px 30px;
-  max-width: 400px;
-  z-index: 10;
-  top: 450px;
-  right: 100px;
+  background-color: #f9efe4;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  text-align: justify;
+  border-radius: 12px;
 }
 
 .info-box p {
@@ -117,12 +117,14 @@ body {
   width: 900px;
   padding: 60px 5px;
   text-align: justify;
+  justify-content: left;
   margin-left: 100px;
 }
 
 /* Cards de planos */
 #planos{
   margin-left: 200px;
+  margin-bottom: 50px;
 }
 
 .card-container {
@@ -226,6 +228,7 @@ body {
 .container2{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   margin-bottom: 100px;
@@ -423,11 +426,16 @@ footer {
   }
   #imagem1{
     width: 100%;
-    height: 788px;
   }
 
   #doeagora {
     margin-left: 15px;
+  }
+
+  .container-box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
   }
 
   .nav-item {
@@ -458,6 +466,8 @@ footer {
   }
   .container2{
     flex-wrap: wrap;
+    justify-content: right;
+    margin: 0 auto;
     flex-direction: column;
   }
 
@@ -499,6 +509,13 @@ footer {
       margin: -20px;
     }
    
+    .container-box{
+      justify-content: center;
+    }
+    .info-box{
+      top: 100px;
+    }
+  
     .navbar-toggler {
       margin-right: 15px;
     }
